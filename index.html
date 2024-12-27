@@ -1,0 +1,386 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Student Portfolio
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .clickable-box {
+            transition: transform 0.2s;
+        }
+        .clickable-box:active {
+            transform: scale(0.95);
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        @keyframes colorChange {
+            0% { background-color: #f3f4f6; }
+            50% { background-color: #e5e7eb; }
+            100% { background-color: #f3f4f6; }
+        }
+        .color-animation {
+            animation: colorChange 2s infinite;
+        }
+        @keyframes borderColorChange {
+            0% { border-color: #f3f4f6; }
+            50% { border-color: #e5e7eb; }
+            100% { border-color: #f3f4f6; }
+        }
+        .photo-animation {
+            animation: borderColorChange 2s infinite;
+            border-width: 4px;
+            border-style: solid;
+        }
+  </style>
+ </head>
+ <body class="bg-white text-gray-900" id="body">
+  <header class="bg-gray-900 shadow">
+   <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+    <div class="text-2xl font-bold text-white">
+     PRITAM KUMAR
+    </div>
+    <nav class="space-x-4">
+     <a class="text-white hover:text-gray-400" href="#about">
+      About
+     </a>
+     <a class="text-white hover:text-gray-400" href="#skills">
+      Skills
+     </a>
+     <a class="text-white hover:text-gray-400" href="#education">
+      Education
+     </a>
+     <a class="text-white hover:text-gray-400" href="#projects">
+      Projects
+     </a>
+     <a class="text-white hover:text-gray-400" href="#contact">
+      Contact
+     </a>
+    </nav>
+    <div>
+     <button class="bg-white text-gray-900 px-3 py-2 rounded-lg hover:bg-green-200" id="toggle-dark-mode">
+      <i class="fas fa-adjust">
+      </i>
+     </button>
+    </div>
+   </div>
+  </header>
+  <main class="container mx-auto px-6 py-12">
+   <section class="mb-12" id="about">
+    <div class="flex flex-col md:flex-row items-center fade-in">
+     <img alt="A detailed portrait of the student" class="rounded-full w-32 h-32 md:w-48 md:h-48 mb-4 md:mb-0 md:mr-6 photo-animation" height="150" src="C:\Users\k\OneDrive\Pictures\my photo pk.jpeg" width="150"/>
+     <div>
+      <h2 class="text-3xl font-bold mb-2">
+       About Me
+      </h2>
+      <p class="text-black">
+        "Hello, I'm Pritam Kumar from Bihar.i'm 19 Years old . I completed my 10th grade from BSEB and am currently pursuing a Diploma in Computer Science at Centurion University of Technology and Management. I enjoy exploring new things, taking on challenges, and expressing my creativity through art. I am goal-oriented and eager to learn and grow in the field of technology."
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="mb-12" id="skills">
+    <h2 class="text-3xl font-bold mb-6">
+     Skills
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+     <div class="bg-gray-100 p-6 rounded-lg shadow-lg clickable-box fade-in color-animation">
+      <h3 class="text-xl font-bold mb-2 text-blue-600">
+       Technical Skills
+      </h3>
+      <ul class="list-disc list-inside text-gray-700">
+       <li>
+        <i class="fas fa-code">
+        </i>
+        C
+       </li>
+       <li>
+        <i class="fas fa-code">
+        </i>
+        C++
+       </li>
+       <li>
+        <i class="fas fa-cloud">
+        </i>
+        AWS Cloud Computing
+       </li>
+       <li>
+        <i class="fas fa-drafting-compass">
+        </i>
+        AutoCAD
+       </li>
+       <li>
+        <i class="fas fa-desktop">
+        </i>
+        DCA
+       </li>
+       <li>
+        <i class="fab fa-html5">
+        </i>
+        HTML
+       </li>
+       <li>
+        <i class="fab fa-css3-alt">
+        </i>
+        CSS
+       </li>
+       <li>
+        <i class="fab fa-python">
+        </i>
+        Python
+       </li>
+      </ul>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-lg clickable-box fade-in color-animation">
+      <h3 class="text-xl font-bold mb-2 text-blue-600">
+       Soft Skills
+      </h3>
+      <ul class="list-disc list-inside text-gray-700">
+       <li>
+        <i class="fas fa-users">
+        </i>
+        Teamwork
+       </li>
+       <li>
+        <i class="fas fa-lightbulb">
+        </i>
+        Problem Solving
+       </li>
+       <li>
+        <i class="fas fa-pen">
+        </i>
+        Writing
+       </li>
+       <li>
+        <i class="fas fa-clock">
+        </i>
+        Time Management
+       </li>
+       <li>
+        <i class="fas fa-comments">
+        </i>
+        Communication
+       </li>
+       <li>
+        <i class="fas fa-brain">
+        </i>
+        Critical Thinking
+       </li>
+      </ul>
+     </div>
+    </div>
+   </section>
+   <section class="mb-12" id="education">
+    <h2 class="text-3xl font-bold mb-6">
+     Education
+    </h2>
+    <div class="bg-gray-100 p-6 rounded-lg shadow-lg mb-6 clickable-box fade-in color-animation">
+     <h3 class="text-xl font-bold mb-2 text-blue-600">
+      10th (2022)
+     </h3>
+     <p class="text-gray-700">
+      Higher Secondery School Chodh dargah Sheikhpura Bihar
+     </p>
+    </div>
+    <div class="bg-gray-100 p-6 rounded-lg shadow-lg clickable-box fade-in color-animation">
+     <h3 class="text-xl font-bold mb-2 text-blue-600">
+      Diploma In Computer Science Engineering (2022-2025)
+     </h3>
+     <p class="text-gray-700">
+      Centurion University Of Technology And management Paralakhemundi Odisha 
+     </p>
+    </div>
+   </section>
+   <section class="mb-12" id="projects">
+    <h2 class="text-3xl font-bold mb-6">
+     Projects
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+     <div class="bg-gray-100 p-6 rounded-lg shadow-lg clickable-box fade-in color-animation">
+      <img alt="Screenshot of staticWEBSITE HOSTING USING AWS EC2 project" class="rounded mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/CNLfk1vrPL3qY6eGHQfOqMbLkyJLwOFZgfjMffkIXeH9y6hfTA.jpg" width="300"/>
+      <h3 class="text-xl font-bold mb-2 text-blue-600">
+       WEBSITE HOSTING USING AWS EC2
+      </h3>
+      <p class="text-gray-700">
+       Hosted a website using AWS EC2, configured security groups, and linked a custom domain via Route 53. Ensured secure access with SSL and optimized performance with basic monitoring.
+      </p>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-lg clickable-box fade-in color-animation">
+      <img alt="Screenshot of IOT BASED SMART CLASSROOM project" class="rounded mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/f480Na5th2VbAqbfbwqBcXfw1oIw8KJdumvTqBec5Bo4VP8PB.jpg" width="300"/>
+      <h3 class="text-xl font-bold mb-2 text-blue-600">
+       IOT BASED SMART CLASSROOM
+      </h3>
+      <p class="text-gray-700">
+       Creating an IoT-enabled Smart Classroom with automated lighting, temperature control, attendance tracking, and live lecture streaming for improved learning, efficiency, and student engagement.
+      </p>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-lg clickable-box fade-in color-animation">
+      <img alt="Screenshot of ERP DASHBOARD IN PYTHON project" class="rounded mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/kCBZXgjOim6jMlssG3HeXJ3CKDCbd4PBFIaawefyfynGWP8PB.jpg" width="300"/>
+      <h3 class="text-xl font-bold mb-2 text-blue-600">
+       ERP DASHBOARD IN PYTHON
+      </h3>
+      <p class="text-gray-700">
+       Developed a dynamic ERP dashboard using Python to manage and visualize key business operations. Integrated data processing, user authentication, and interactive visualizations for real-time insights.
+      </p>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-lg clickable-box fade-in color-animation">
+      <img alt="Screenshot of SIMPLE CALCULATOR project" class="rounded mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/mrjMNjzHkmJPN5uMd63Pfh2D0WfLVUavBL8FBHYEFeE1qHePB.jpg" width="300"/>
+      <h3 class="text-xl font-bold mb-2 text-blue-600">
+       SIMPLE CALCULATOR
+      </h3>
+      <p class="text-gray-700">
+       The Simple Calculator is a web-based application that allows users to perform basic arithmetic operations, including addition, subtraction, multiplication, and division. Built using HTML, CSS, and JavaScript, this project showcases fundamental web development skills and provides an interactive user experience.
+      </p>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-lg clickable-box fade-in color-animation">
+      <img alt="Screenshot of E-commerce Website project" class="rounded mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/6yCvNyn50qZfHa22ETVGLDZHk8RexfYD18xgMaC8wQiHrHePB.jpg" width="300"/>
+      <h3 class="text-xl font-bold mb-2 text-blue-600">
+       E-COMMERCE WEBSITE
+      </h3>
+      <p class="text-gray-700">
+       Developed a responsive website with product listings, shopping cart, secure login, and order management using HTML, CSS, and JavaScript.
+      </p>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-lg clickable-box fade-in color-animation">
+      <img alt="Screenshot of my portfolio website project" class="rounded mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/YoTXUpGCxRpeIqz1DNzCeReyRivyXMTVu9Eas8FdKIOeVP8PB.jpg" width="300"/>
+      <h3 class="text-xl font-bold mb-2 text-blue-600">
+       MY PORTFOLIO WEBSITE
+      </h3>
+      <p class="text-gray-700">
+       Developed a personal portfolio website to showcase my projects, skills, and experience. Built using HTML, CSS, and JavaScript.
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="mb-12" id="contact">
+    <h2 class="text-3xl font-bold mb-6">
+     Contact
+    </h2>
+    <form class="bg-gray-100 p-6 rounded-lg shadow-lg clickable-box fade-in color-animation">
+     <div class="mb-4">
+      <label class="block text-gray-700 font-bold mb-2" for="name">
+       Name
+      </label>
+      <input class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" id="name" type="text"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 font-bold mb-2" for="email">
+       Email
+      </label>
+      <input class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" id="email" type="email"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 font-bold mb-2" for="message">
+       Message
+      </label>
+      <textarea class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" id="message"></textarea>
+     </div>
+     <button class="w-full bg-blue-500 text-white px-3 py-2 rounded-lg hover:bg-blue-600" type="submit">
+      Send Message
+     </button>
+    </form>
+   </section>
+   <section class="mb-12" id="links">
+    <h2 class="text-3xl font-bold mb-6">
+     Links
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+     <div class="bg-gray-100 p-6 rounded-lg shadow-lg clickable-box fade-in color-animation">
+      <h3 class="text-xl font-bold mb-2 text-blue-600">
+       CV
+      </h3>
+      <a class="text-blue-500 hover:underline" href="file:///C:/Users/k/OneDrive/Pictures/PRITAM%20KUMAR%20(1).pdf" target="_blank">
+       Download CV
+      </a>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-lg clickable-box fade-in color-animation">
+      <h3 class="text-xl font-bold mb-2 text-blue-600">
+       GitHub
+      </h3>
+      <a class="text-blue-500 hover:underline" href="https://github.com/Pritamnirala12" target="_blank">
+       Visit GitHub Profile
+      </a>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-lg clickable-box fade-in color-animation">
+      <h3 class="text-xl font-bold mb-2 text-blue-600">
+       LinkedIn
+      </h3>
+      <a class="text-blue-500 hover:underline" href="https://www.linkedin.com/in/pritam-kumar-a5a0a9247/" target="_blank">
+       Visit LinkedIn Profile
+      </a>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-lg clickable-box fade-in color-animation">
+      <h3 class="text-xl font-bold mb-2 text-blue-600">
+       Instagram
+      </h3>
+      <a class="text-blue-500 hover:underline" href="https://instagram.com/Pritamnirala12" target="_blank">
+       Visit Instagram Profile
+      </a>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-gray-900 shadow py-6">
+   <div class="container mx-auto px-6 text-center">
+    <p class="text-white">
+     ©Pritam kumar Diploma Computer Science Engineer. All rights reserved.
+    </p>
+    <div class="mt-4 space-x-4">
+      </i>
+     </a>
+     <a class="text-white hover:text-gray-400" href="https://linkedin.com">
+      <i class="fab fa-linkedin">
+      </i>
+     </a>
+     <a class="text-white hover:text-gray-400" href="https://github.com">
+      <i class="fab fa-github">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   document.getElementById('toggle-dark-mode').addEventListener('click', function() {
+            var body = document.getElementById('body');
+            if (body.classList.contains('bg-white')) {
+                body.classList.remove('bg-white');
+                body.classList.add('bg-gray-600');
+                body.classList.remove('text-gray-600');
+                body.classList.add('text-gray-100');
+            } else {
+                body.classList.remove('bg-gray-600');
+                body.classList.add('bg-white');
+                body.classList.remove('text-gray-100');
+                body.classList.add('text-gray-600');
+            }
+        });
+
+        // Intersection Observer for fade-in animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        });
+
+        document.querySelectorAll('.fade-in').forEach(element => {
+            observer.observe(element);
+        });
+  </script>
+ </body>
+</html>
